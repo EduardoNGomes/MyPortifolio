@@ -1,25 +1,30 @@
+import { HeaderContainer, HeaderContent } from "./styles"
+
 export const Header = () => {
   return (
-    <div>
-      <h1>&#60; Eduardo &#62;/ </h1>
+    <HeaderContainer>
+      <HeaderContent>
+
+      <h1><span>&#60;</span>  Eduardo N Gomes <span>/&#62;</span> </h1>
 
       <ul>
         <li>
           <button>
-            Sobre
+            sobre
           </button>
           </li>
         <li>
           <button>
-            Projetos
+            projetos
           </button>
         </li>
         <li>
           <button>
-            Contatos
+            contatos
           </button>
           </li>
       </ul>
-    </div>
+      </HeaderContent>
+    </HeaderContainer>
   )
 }
