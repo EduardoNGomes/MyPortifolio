@@ -83,7 +83,7 @@ export const HeaderContent = styled.nav`
       background: ${({ theme }) => theme.background};
       width: 100%;
       text-align: center;
-      transition: 0.5s;
+      transition: all 0.5s ease-in-out;
     }
     .nav-item {
       margin: 16px 0;
@@ -91,7 +91,12 @@ export const HeaderContent = styled.nav`
     }
     .nav-menu.active {
       top: 150px;
-      width: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .nav-menu.active {
+      top: 100px;
     }
   }
 `

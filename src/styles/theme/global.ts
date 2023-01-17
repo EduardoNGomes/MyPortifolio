@@ -11,6 +11,7 @@ export const GlobalStyle = createGlobalStyle`
 
 body {
   background: ${(props) => props.theme.background};
+  transition: .3s all ease-in-out;
 }
 
 li {
@@ -25,5 +26,13 @@ button, li, a , span{
   font-family: 'Roboto Mono', monospace;
 }
 
+#theme-button{
+  position: fixed;
+  top: 4%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
+  background-color: transparent;
+  border: none
+}
 `
