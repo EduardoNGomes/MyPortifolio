@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const HeaderContainer = styled.header``
 
-export const HeaderContent = styled.div`
+export const HeaderContent = styled.nav`
   display: flex;
   justify-content: space-between;
   text-align: center;
@@ -12,6 +12,8 @@ export const HeaderContent = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    font-size: 2rem;
 
     gap: 15px;
 
@@ -47,6 +49,49 @@ export const HeaderContent = styled.div`
     :hover {
       color: ${(props) => props.theme.hover};
       border-bottom: 1px solid ${(props) => props.theme.hover};
+    }
+  }
+
+  .activePage {
+    color: ${(props) => props.theme.hover};
+    border-bottom: 1px solid ${(props) => props.theme.hover};
+  }
+
+  .menu {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.2rem;
+    }
+    .menu {
+      display: block;
+      background: transparent;
+      border: none;
+      color: ${(props) => props.theme.hover};
+
+      cursor: pointer;
+    }
+    .nav-menu {
+      position: fixed;
+      top: -100%;
+      gap: 0;
+      display: flex;
+      flex-direction: column;
+      z-index: 1;
+      background: ${({ theme }) => theme.background};
+      width: 100%;
+      text-align: center;
+      transition: 0.5s;
+    }
+    .nav-item {
+      margin: 16px 0;
+      width: 80%;
+    }
+    .nav-menu.active {
+      top: 150px;
+      width: 100%;
     }
   }
 `

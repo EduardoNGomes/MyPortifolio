@@ -36,6 +36,18 @@ export const LatestProjectsContainer = styled.div`
     display: flex;
     justify-content: space-between;
   }
+  @media (max-width: 768px) {
+    > div {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  }
+  @media (max-width: 500px) {
+    > div {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
 `
 
 export const AllProjectsContainer = styled.div`
@@ -72,6 +84,17 @@ export const AllProjectsContainer = styled.div`
 
     :hover {
       text-shadow: 1px 1px 15px rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  @media (max-width: 500px) {
+    h3 {
+      text-align: center;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      margin-left: 40px;
     }
   }
 `

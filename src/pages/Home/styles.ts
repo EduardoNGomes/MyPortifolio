@@ -37,4 +37,14 @@ export const HomeContainer = styled.main`
       color: ${(props) => props.theme.hover};
     }
   }
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    gap: 30px;
+    font-size: 1rem;
+    h2,
+    p span {
+      font-size: 1.5rem;
+    }
+  }
 `

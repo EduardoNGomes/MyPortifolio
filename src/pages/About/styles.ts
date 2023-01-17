@@ -25,6 +25,16 @@ export const TextContainer = styled.section`
     color: ${(props) => props.theme.text};
     text-indent: 30px;
   }
+  @media (max-width: 500px) {
+    h2 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    p {
+      text-indent: 0px;
+      font-size: 1rem;
+    }
+  }
 `
 
 export const SkillsContainer = styled.section`
@@ -71,6 +81,20 @@ export const SkillsContainer = styled.section`
     text-transform: uppercase;
     :active {
       color: ${(props) => props.theme.text};
+    }
+  }
+
+  @media (max-width: 500px) {
+    h2 {
+      font-size: 1.5rem;
+    }
+    ul {
+      flex-direction: column;
+    }
+    ul li {
+      font-size: 1rem;
+
+      justify-content: flex-start;
     }
   }
 `

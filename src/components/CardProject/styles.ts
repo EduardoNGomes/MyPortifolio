@@ -37,4 +37,12 @@ export const CardProjectContainer = styled.div`
       }
     }
   }
+
+  @media (max-width: 768px) {
+    > div {
+      h3 {
+        font-size: 1.2rem;
+      }
+    }
+  }
 `

@@ -46,4 +46,10 @@ export const ContactContainer = styled.section`
   ul li a span {
     color: ${(props) => props.theme.strong};
   }
+
+  @media (max-width: 500px) {
+    ul {
+      flex-direction: column;
+    }
+  }
 `

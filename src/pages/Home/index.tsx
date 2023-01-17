@@ -1,6 +1,9 @@
+import { useNavigate } from 'react-router-dom'
 import { HomeContainer } from './styles'
 
 export const Home = () => {
+  const navigate = useNavigate()
+
   return (
     <HomeContainer>
       <div>
@@ -12,7 +15,7 @@ export const Home = () => {
         </p>
       </div>
       <div>
-        <button>saiba mais</button>
+        <button onClick={() => navigate('/about')}>saiba mais</button>
       </div>
     </HomeContainer>
   )
