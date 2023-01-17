@@ -6,7 +6,7 @@ export const DefaultLayoutContent = styled.div`
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 150px;
+  gap: 50px;
 `
 
 export const OutletContainer = styled.div`
