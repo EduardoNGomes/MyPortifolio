@@ -1,3 +1,7 @@
+import imgCoffe from '../assets/images/coffeedelivery.png'
+import imgFood from '../assets/images/FoodExplorer.png'
+import imgBlog from '../assets/images/github-blog.png'
+
 interface dataProps {
   id: number
   img: string
@@ -12,20 +16,20 @@ export const data: dataProps[] = [
     title: 'Food Explorer',
     github: 'https://github.com/EduardoNGomes/Front_end_Explorer_Food',
     deploy: 'https://foodexplorereduardo.netlify.app/',
-    img: '../../assets/images/FoodExplorer.png',
+    img: imgFood,
   },
   {
     id: 2,
     title: 'Coffee Delivery',
     github: 'https://github.com/EduardoNGomes/CoffeeDelivery',
     deploy: 'https://coffeedelivery-eduardo.netlify.app/',
-    img: '../../assets/images/coffeedelivery.png',
+    img: imgCoffe,
   },
   {
     id: 3,
     title: 'GitHub Blog',
     github: 'https://github.com/EduardoNGomes/Github_Blog',
     deploy: 'https://blogeduardogithub.netlify.app/',
-    img: '../../assets/images/github-blog.png',
+    img: imgBlog,
   },
 ]
