@@ -27,7 +27,7 @@ button, li, a , span{
 }
 
 #theme-button{
-  position: fixed;
+  position: absolute;
   top: 4%;
   left: 50%;
   transform: translate(-50%, -50%);
